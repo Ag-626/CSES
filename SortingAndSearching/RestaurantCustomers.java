@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -48,7 +47,15 @@ public class RestaurantCustomers {
     }
   }
 
-  record Pair(int first, int second){}
+  static class Pair{
+    int first;
+    int second;
+
+    Pair(int first, int second){
+      this.first = first;
+      this.second = second;
+    }
+  }
 
   public static void main(String[] args) throws Exception{
     FastScanner fs = new FastScanner(System.in);
@@ -67,7 +74,14 @@ public class RestaurantCustomers {
         }
       }
     }
-    Arrays.sort(seTime, Comparator.comparingInt(Pair::first).thenComparingInt(Pair::second));
+    Arrays.sort(seTime, new Comparator<Pair>() {
+      @Override
+      public int compare(Pair o1, Pair o2) {
+        if(o1.first!=o2.first)
+          return Integer.compare(o1.first, o2.first);
+        return Integer.compare(o1.second, o2.second);
+      }
+    });
     int ans=0;
     int val=0;
     for(int i=0;i<2*n;i++){
