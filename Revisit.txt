@@ -2,4 +2,5 @@ SortingAndSearching/CollectingNumbers
 SortingAndSearching/CollectingNumbersII
 IntroductoryProblem/GridPathDescription
 IntroductoryProblem/TwoKnights
+DynamicProgramming/CoinCombinationsII(Unordered way of calculating the ways)
 
