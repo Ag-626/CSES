@@ -3,4 +3,6 @@ SortingAndSearching/CollectingNumbersII
 IntroductoryProblem/GridPathDescription
 IntroductoryProblem/TwoKnights
 DynamicProgramming/CoinCombinationsII(Unordered way of calculating the ways)
+DynamicProgramming/CoinCombinationsII(Typical Knapsack that takes Space complexity of O(n), if done the computation in right order)
+
 

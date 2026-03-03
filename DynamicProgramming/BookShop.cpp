@@ -23,6 +23,7 @@ int main() {
     for(int i=0;i<n;i++){
         cin>>pages[i];
     }
+    // this is when dp[m] = cost for <=m
     vector<int> dp(x+1, 0);
     dp[0]=0;
     for(int i=0;i<n;i++){
@@ -30,6 +31,18 @@ int main() {
             dp[j]=max(dp[j], dp[j-price[i]]+pages[i]);
         }
     }
+
+    //     const int NEG = -1e9;               // safely below any possible pages
+    // vector<int> bestExact(x + 1, NEG);
+    // bestExact[0] = 0;
+
+    // for (int i = 0; i < n; i++) {
+    //     for (int m = x; m >= h[i]; m--) {
+    //         if (bestExact[m - h[i]] != NEG) {
+    //             bestExact[m] = max(bestExact[m], bestExact[m - h[i]] + s[i]);
+    //         }
+    //     }
+    // }
     cout<<dp[x]<<'\n';
 
     return 0;
