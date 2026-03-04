@@ -5,3 +5,4 @@ IntroductoryProblem/TwoKnights
 DynamicProgramming/CoinCombinationsII(Unordered way of calculating the ways)
 DynamicProgramming/BookShop(Typical Knapsack that takes Space complexity of O(n), if done the computation in right order)
 DynamicProgramming/CountingTowers
+DynamicProgramming/MinimumGridPaths
