@@ -8,5 +8,5 @@ DynamicProgramming/CountingTowers
 DynamicProgramming/MinimumGridPaths
 DynamicProgramming/ElevatorRides
 DynamicProgramming/IncreasingSubsequenceII (Coordinate Com)
-DynamicProgramming/MountingRange (Coordinate Com)
 DynamicProgramming/MountingRange
+DynamicProgramming/CountingTile
