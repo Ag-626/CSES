@@ -7,4 +7,6 @@ DynamicProgramming/BookShop(Typical Knapsack that takes Space complexity of O(n)
 DynamicProgramming/CountingTowers
 DynamicProgramming/MinimumGridPaths
 DynamicProgramming/ElevatorRides
-DynamicProgramming/IncreasingSubsequence (Coordinate Com)
+DynamicProgramming/IncreasingSubsequenceII (Coordinate Com)
+DynamicProgramming/MountingRange (Coordinate Com)
+DynamicProgramming/MountingRange
